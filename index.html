@@ -1,1 +1,229 @@
-ola mundo!
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evandro Vasconcelos - Contador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a5d8ff;
+    }
+
+    .hero {
+      background-color: #e6f0ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: #004080;
+      font-size: 36px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+
+    footer {
+      background-color: #00264d;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <h1>Evandro Vasconcelos</h1>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Contabilidade confiável e moderna</h2>
+      <p>Atendimento personalizado para empresas e profissionais em todo o Brasil.</p>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="container">
+      <h3>Sobre Evandro Vasconcelos</h3>
+      <p>Com ampla experiência no mercado contábil, Evandro Vasconcelos oferece soluções eficientes e seguras para sua empresa crescer de forma saudável. Atuando com ética, precisão e compromisso, ele presta serviços a micro, pequenas e médias empresas, além de profissionais autônomos e liberais.</p>
+    </div>
+  </section>
+
+  <section class="section" id="servicos">
+    <div class="container">
+      <h3>Serviços oferecidos</h3>
+      <div class="services">
+        <div class="service-card">
+          <h4>Contabilidade Geral</h4>
+          <p>Organização e registro das operações financeiras de sua empresa de forma clara e objetiva.</p>
+        </div>
+        <div class="service-card">
+          <h4>Imposto de Renda</h4>
+          <p>Declaração do IRPF com análise detalhada para evitar erros e garantir sua tranquilidade.</p>
+        </div>
+        <div class="service-card">
+          <h4>Abertura de Empresas</h4>
+          <p>Auxílio completo no processo de formalização do seu negócio, com agilidade e segurança.</p>
+        </div>
+        <div class="service-card">
+          <h4>Consultoria Contábil</h4>
+          <p>Orientações estratégicas para ajudar na tomada de decisões financeiras e tributárias.</p>
+        </div>
+        <div class="service-card">
+          <h4>Folha de Pagamento</h4>
+          <p>Gestão completa da folha de pagamento com cálculos e obrigações acessórias.</p>
+        </div>
+        <div class="service-card">
+          <h4>Regularização de CNPJ</h4>
+          <p>Solucionamos pendências e deixamos seu CNPJ em dia com os órgãos competentes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="container">
+      <h3>Entre em contato</h3>
+      <p>Fale diretamente com o contador Evandro Vasconcelos pelo WhatsApp. Atendimento ágil e personalizado.</p>
+    </div>
+  </section>
+
+  <!-- Botão WhatsApp -->
+  <a class="whatsapp-btn" href="https://wa.me/5591981073635" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+    <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp"/>
+    WhatsApp
+  </a>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Evandro Vasconcelos - Contador | CNPJ: 00.000.000/0001-00</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
