@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F7FA;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #FFFFFF;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #6A1B9A;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #6A1B9A;
+}
+
+/* Hero */
+.hero {
+  background: #6A1B9A;
+  color: #FFFFFF;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 300px;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Seções */
+.section {
+  padding: 60px 20px;
+  background: #FFFFFF;
+}
+
+.section h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #6A1B9A;
+}
+
+.bg-light {
+  background-color: #F5F7FA;
+}
+
+/* Cards / Grids */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: #6A1B9A;
+}
+
+/* Rodapé */
+footer {
+  background-color: #6A1B9A;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-grid h4 {
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 26px;
+  }
+}
