@@ -190,3 +190,12 @@ footer {
     font-size: 26px;
   }
 }
+/* Destaque para títulos */
+.section h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #6A1B9A;
+  text-transform: uppercase;
+}
